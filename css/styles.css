@@ -1,0 +1,250 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-text-color: #2E2F42 ;
+    --primary-secondary-color: #434455 ;
+    --primary-third-color: #4D5AE5 ;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+}
+
+/* ======================== COMPONENTS ======================== */
+.page-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.logo-first-part {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+}
+/* ======================== /COMPONENTS ======================== */
+
+/* ======================== HEADER ======================== */
+.menu-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em; 
+    color: var(--primary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--primary-third-color);
+}
+
+.mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-secondary-color);
+}
+
+.mail:hover,
+.mail:focus {
+    color: var(--primary-third-color);
+}
+
+.phone-number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-secondary-color);
+}
+
+.phone-number:hover,
+.phone-number:focus {
+    color: var(--primary-third-color);
+}
+/* ======================== /HEADER ======================== */
+
+/* ======================== HERO ======================== */
+.hero {
+    background-color: var(--primary-text-color);
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.modal-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: var(--primary-third-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    
+}
+/* ======================== /HERO ======================== */
+
+/* ======================== ABOUT ======================== */
+.plus-list-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.plus-list-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-secondary-color);
+}
+/* ======================== /ABOUT ======================== */
+
+/* ======================== WHAT DOING ======================== */
+
+/*======================== /WHAT DOING ========================  */
+
+/* ======================== OUR TEAM ======================== */
+.our-team {
+    background-color: #F4F4FD;
+}
+
+.command-item {
+    background-color: #FFFFFF;
+}
+
+.command-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.command-work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-secondary-color);
+}
+/* ======================== /OUR TEAM ======================== */
+
+/* ======================== FOOTER ======================== */
+.footer {
+    background-color: var(--primary-text-color);
+}
+
+.footer-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+
+.logo-second-part {
+    color: #F4F4FD;
+}
+/* ======================== /FOOTER ======================== */
+
+/*======================== SECOND PAGE. FILTERS ========================  */
+.filter-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-third-color);
+    cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #FFFFFF;
+    background-color: var(--primary-third-color);
+}
+
+.active {
+    color: #FFFFFF;
+    background-color: var(--primary-third-color);
+}
+
+/*======================== Examples ========================  */
+.examples-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.examples-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-secondary-color);
+}
+
+.exaples-payment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
