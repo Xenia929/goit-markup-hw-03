@@ -28,6 +28,7 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .list {
@@ -49,9 +50,11 @@ body {
 }
 
 .section-content-wrapper {
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* ======================== COMPONENTS ======================== */
@@ -76,6 +79,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-first-part {
@@ -89,13 +94,22 @@ body {
     letter-spacing: 0.03em;
     color: #4D5AE5;
 }
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* ======================== /COMPONENTS ======================== */
 
 /* ======================== HEADER ======================== */
-.page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 
 .page-header-wrapper{
     display: flex;
@@ -116,6 +130,11 @@ body {
 .menu {
     display: flex;
     align-items: center;
+}
+
+.menu-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-item:not(:last-child) {
@@ -147,6 +166,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-secondary-color);
     margin-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .mail:hover,
@@ -160,6 +181,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-secondary-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .phone-number:hover,
@@ -210,9 +233,10 @@ body {
 /* ======================== /HERO ======================== */
 
 /* ======================== ABOUT ======================== */
-.strategy-list {
-    margin-bottom: 120px;
+.section-strategy {
+    padding-top: 120px;
 }
+
 
 .plus-list {
     display: flex;
@@ -230,6 +254,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 
 .plus-list-desc {
@@ -242,6 +267,11 @@ body {
 /* ======================== /ABOUT ======================== */
 
 /* ======================== WHAT DOING ======================== */
+.section-doing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .work-list {
     flex-wrap: wrap;
     gap: 24px;
@@ -283,6 +313,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 
 .command-work {
@@ -327,9 +358,6 @@ body {
 }
 
 /*======================== FILTERS ========================  */
-.filters-sec-page{
-    display: none;
-}
 
 .filters-btn-wraper {
     display: flex;
@@ -343,7 +371,7 @@ body {
 }
 
 .filter-btn {
-    padding: 8px 16px;
+    padding: 12px 24px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -382,7 +410,7 @@ body {
 .examples-description-wrapper {
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding: 32px 0;
+    padding: 32px 16px 32px 16px;
 }
 
 .examples-title {
@@ -391,6 +419,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 
 .examples-desc {
