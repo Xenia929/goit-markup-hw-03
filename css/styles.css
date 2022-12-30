@@ -51,10 +51,9 @@ body {
 
 .section-content-wrapper {
     width: 1158px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* ======================== COMPONENTS ======================== */
@@ -79,8 +78,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
 }
 
 .logo-first-part {
@@ -89,8 +88,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     color: #4D5AE5;
 }
@@ -110,6 +107,13 @@ body {
 /* ======================== /COMPONENTS ======================== */
 
 /* ======================== HEADER ======================== */
+.page-header {
+    height: 72px;
+}
+.portfolio {
+    border-bottom: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .page-header-wrapper{
     display: flex;
@@ -120,26 +124,23 @@ body {
 
 .page-nav {
     display: flex;
-    align-items: center;
 }
 
 .logo {
     margin-right: 77px;
 }
 
+
 .menu {
     display: flex;
     align-items: center;
 }
 
-.menu-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 
 .menu-item:not(:last-child) {
     margin-right: 40px;
 }
+
 
 .menu-link {
     font-weight: 600;
@@ -147,10 +148,16 @@ body {
     line-height: 1.5; 
     letter-spacing: 0.02em; 
     color: var(--primary-text-color);
+    padding-top: 24px;
+    padding-bottom: 24px; 
 }
 
 .menu-link:hover,
 .menu-link:focus {
+    color: var(--primary-third-color);
+}
+
+.is-active {
     color: var(--primary-third-color);
 }
 
@@ -160,6 +167,7 @@ body {
 }
 
 .mail {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -176,6 +184,7 @@ body {
 }
 
 .phone-number {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -196,12 +205,15 @@ body {
     background-color: var(--primary-text-color);
 }
 
+.section-hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+}
+
 .hero-content {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 192px;
-    padding-bottom: 192px;
 
 }
 
@@ -406,6 +418,7 @@ body {
 .examples-item {
     flex-basis: calc((100% - 48px)/3);
 }
+
 
 .examples-description-wrapper {
     border: 0.5px solid #F4F4FD;
